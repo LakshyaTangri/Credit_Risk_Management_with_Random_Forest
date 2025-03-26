@@ -1,6 +1,6 @@
 ---
 
-# Risk Management Framework with Random Forest Bagging
+# Financial Risk Classification model
 
 This project provides a framework for assessing financial risk (e.g., credit, liquidity, or market risk) using predictive analytics. It leverages machine learning to identify high-risk cases, helping decision-makers manage risk effectively.
 
