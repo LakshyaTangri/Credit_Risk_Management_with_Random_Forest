@@ -101,4 +101,4 @@ The model identified the following features as most significant in predicting lo
    
 ## 📬 Contact
 
-linkedin.com/in/lakshyatangri/
+<a href = 'linkedin.com/in/lakshyatangri/'>
