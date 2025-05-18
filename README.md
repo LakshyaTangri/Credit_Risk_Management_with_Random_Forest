@@ -1,6 +1,6 @@
 # Credit Risk Management with Random Forest
 
-This project offers a comprehensive framework for assessing financial risk—such as credit, liquidity, or market risk—using predictive analytics. By leveraging a Random Forest Classifier, it identifies high-risk loan applicants, aiding financial institutions in making informed lending decisions.([Kaggle][1])
+This project offers a comprehensive framework for assessing financial risk—such as credit, liquidity, or market risk—using predictive analytics. By leveraging a Random Forest Classifier, it identifies high-risk loan applicants, aiding financial institutions in making informed lending decisions.
 
 ## 📌 Features
 
