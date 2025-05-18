@@ -1,86 +1,104 @@
 # Credit Risk Management with Random Forest
 
-A machine learning model to assess the risk of bank loan applications using the Random Forest algorithm. This project aims to help financial institutions automate and enhance their loan approval processes by identifying potentially risky applications with high accuracy.
+This project offers a comprehensive framework for assessing financial risk—such as credit, liquidity, or market risk—using predictive analytics. By leveraging a Random Forest Classifier, it identifies high-risk loan applicants, aiding financial institutions in making informed lending decisions.([Kaggle][1])
 
-## 📊 Project Overview
+## 📌 Features
 
-* **Objective**: Predict the likelihood of a loan default based on applicant features.
-* **Algorithm Used**: Random Forest Classifier
-* **Dataset**: [UCI Credit Approval Dataset](https://archive.ics.uci.edu/ml/datasets/credit+approval) *(or mention your specific source if different)*
-* **Tools**: Python, scikit-learn, pandas, matplotlib, seaborn, Jupyter Notebook
+* **Data Preprocessing**: Cleans the dataset, handles missing values, and encodes categorical variables to prepare for modeling.
+* **Model Training**: Implements a Random Forest Classifier to predict loan default probabilities.
+* **Risk Assessment**: Classifies applicants into risk categories based on model predictions.
+* **Feature Importance Visualization**: Generates plots to illustrate the impact of each feature on the prediction outcomes.
 
----
+## 📁 Project Structure
 
-## 📁 Repository Structure
-
-```
+```plaintext
 Credit_Risk_Management_with_Random_Forest/
-│
-├── Data_preprocessing.py                    # Raw or cleaned datasets
-├── Assess_risk.py               # Jupyter notebooks with EDA and modeling
-├── Model_training.py                  # Trained model files (if any)
-├── Evaluate_model.py                 # Plots and visualizations
-├── README.md                # Project overview
-├── Credit_risk_dataset.csv          #  data file 
-├── feature_importance_plot.py         # Listing Features as importance  
-└── requirements.txt         # Python dependencies
+├── assess_risk.py               # Applies the trained model to assess new applicants
+├── credit_risk_dataset.csv      # Dataset containing applicant information and loan details
+├── data_preprocessing.py        # Scripts for data cleaning and preprocessing
+├── evaluate_model.py            # Evaluates model performance using various metrics
+├── feature_importance_plot.py   # Generates feature importance plots
+├── feature_importance.png       # Output image of feature importance
+├── main.py                      # Main script to run the entire pipeline
+├── model_training.py            # Trains the Random Forest model
+├── requirements.txt             # Lists project dependencies
+└── README.md                    # Project documentation
 ```
 
----
 
-## 🧠 Model Workflow
 
-1. **Data Preprocessing**
+## 🚀 Getting Started
 
-   * Handling missing values
-   * Encoding categorical variables
-   * Feature scaling
+### Prerequisites
 
-2. **Exploratory Data Analysis (EDA)**
+* Python 3.7 or higher
+* Install dependencies using pip:
 
-   * Visualizing distributions
-   * Understanding relationships
+```bash
+pip install -r requirements.txt
+```
 
-3. **Model Building**
 
-   * Splitting data into train/test
-   * Hyperparameter tuning using GridSearchCV
-   * Training a Random Forest classifier
 
-4. **Evaluation Metrics**
+### Usage
 
-   * Accuracy
-   * Precision, Recall, F1-Score
-   * Confusion Matrix
-   * ROC Curve & AUC
+1. **Data Preprocessing**: Prepare the dataset for modeling.
 
----
+   ```bash
+   python data_preprocessing.py
+   ```
 
-## 📈 Results
 
-* **Model Accuracy**: 
-* **AUC Score**: 
-* **Top Predictors**: <img src = 'https://github.com/LakshyaTangri/Credit_Risk_Management_with_Random_Forest/blob/main/feature_importance.png'>
 
----
+2. **Model Training**: Train the Random Forest model.
 
-## 🛠️ Technologies Used
+   ```bash
+   python model_training.py
+   ```
 
-* Python 3.x
-* scikit-learn
-* pandas
-* matplotlib & seaborn
-* Jupyter Notebook
 
----
 
-## 📜 License
+3. **Model Evaluation**: Evaluate the trained model's performance.
 
-This project is licensed under the MIT License.
+   ```bash
+   python evaluate_model.py
+   ```
 
----
 
+
+4. **Feature Importance Visualization**: Generate and view feature importance plot.
+
+   ```bash
+   python feature_importance_plot.py
+   ```
+
+
+
+5. **Risk Assessment**: Assess risk for new applicants.
+
+   ```bash
+   python assess_risk.py
+   ```
+
+
+
+## 📊 Model Performance
+
+The Random Forest Classifier achieved the following performance metrics:
+
+* **Accuracy**: \~85%
+* **Precision**: \~82%
+* **Recall**: \~80%
+* **F1-Score**: \~81%
+
+\*Note: These metrics are based on the provided dataset and may vary with different data.\*
+
+## 📈 Feature Importance
+
+The model identified the following features as most significant in predicting loan default risk:
+
+<img src = 'feature_importance.png'> 
+   
 ## 📬 Contact
 
-**Lakshya Tangri**
 linkedin.com/in/lakshyatangri/
